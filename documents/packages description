@@ -1,0 +1,57 @@
+#########################################
+# 	Description of packages 	#
+#########################################
+
+Introduction 
+~------------
+This document offers a description of the main packages to be included in AS Remind, a minimal application to remind users of google calendar tasks and track users activites.
+
+Programming language
+~-------------------
+Code developed uss Java. The Swing & Java 2D libraries are significantly used to create the visually enhanced UI and animations for the application.
+
+Main Packages
+~------------
+1. CustomUIComponents : This contains the UI components extended or developed for the application
+
+	- InformationPane : stores the minimal view of the application displayed when the application shows the current activity being used.
+	- GradientPane : this is the background pane with the gradient UI that forms the canvas for each of the screens displayed in the application
+	- AnimatedButtonPanel : This contains the icons for Activities, Schedule and Track options
+	- AnimatedButton : These are the main buttons that when selected displays a different (and relevant) pane  
+	- ListButton : This forms the buttons for the days under the schedule option
+	- AnimatedClock : This displays an animated clock where the hands for the clock display real time
+	- Timesheet : Displays the items for a particular day under the 'Schedule' section of the application
+	- ActivityLabel : this displays a specific activity that is displayed as an item in the timesheet
+	- ActivitiesList : This displays an activities list that is displayed in the Track section of the application
+	- ActivitiesTextField : Allows the entry of activities for the Track section of the application
+	- ASLabels : labels that display information e.g. the number of messages for the Track section of the application	
+ 	- SingleLabel : displays the activity to be displayed on the activities section of the application in the top left section
+	- MultipleLabel : displays the two activities displayed on the Actiivities section of the application on the right bottom section
+
+2. NotificationBar : This contains the classes that allow for the display and behaviour of the information pane (minimal window displayed to show the current action being undertaken by the application)
+
+	- InformationContainer
+	- InformationPaneEventsListener
+	- InformationContainerHighlighter : informs the user of pending action or tracked action
+
+3. Registry : Writes to the windows registry to start up the application on the windows startup
+	
+	- Registry
+
+4. DataSource : this package contains classes that use the REST API to communicate to Google Calendars to retrieve data for the various calendars and for their display on the Timesheet section of the application
+
+	- Calendars
+	- CalandarActions
+	- Connection
+	
+5. DataStore : this package contains classes to store/cache login details and calendar details entered for synchronization to google calendars when connectivity is present
+	
+	- Cache
+	- 
+
+6. Authentication : This package contains classes that assist to authenticate with Google Calendar service and retrieve the various timesheet entries for the application
+	
+	- Authentication
+
+6. Encrypt : This class encrypts all the data stored about the calendar items and login details for the various calendars' data for the application
+	

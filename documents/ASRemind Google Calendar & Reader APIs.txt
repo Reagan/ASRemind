@@ -1,0 +1,25 @@
+ASRemind required Google Calendar API
+~------------------------------------
+
+1. get the current activity (for the current time) [x]
+2. get the coming up activity (from the current time) [x]
+3. get a certain number of activies that are coming up (from the current time) [x]
+4. get the calendar activities for a day [x]
+5. get the calendar activities for a week [x]
+6. get the list of calendars for a user [x]
+
+
+
+API to support the calendar API
+~-------------------------------
+1. get the current time 
+2. get the current week
+3. get the current day
+
+/*** Will not be supported in this version! ****/
+ASRemind required Google Reader API
+~-----------------------------------
+(http://code.google.com/p/greader-unofficial/)
+
+1. list of all subscribed feeds by a user
+2. items under each of the subsribed feeds by the user

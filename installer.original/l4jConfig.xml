@@ -1,0 +1,34 @@
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\Reagan\Desktop\Desktop 8_8_2012\ASRemind\as-remind\installer\install.jar</jar>
+  <outfile>C:\Users\Reagan\Desktop\Desktop 8_8_2012\ASRemind\as-remind\installer\setup.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir></chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <customProcName>false</customProcName>
+  <stayAlive>false</stayAlive>
+  <manifest></manifest>
+  <icon>C:\Users\Reagan\Desktop\Desktop 8_8_2012\ASRemind\as-remind\installer\app.ico</icon>
+  <jre>
+    <path>C:\Program Files (x86)\Java\jre6</path>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+  </jre>
+  <versionInfo>
+    <fileVersion>0.1.0.0</fileVersion>
+    <txtFileVersion>0.1.ALPHA</txtFileVersion>
+    <fileDescription>A Reminder application that links to Google Calendar</fileDescription>
+    <copyright>2012</copyright>
+    <productVersion>0.1.0.0</productVersion>
+    <txtProductVersion>0.1.ALPHA</txtProductVersion>
+    <productName>ASRemind</productName>
+    <companyName>AS</companyName>
+    <internalName>ASRemind</internalName>
+    <originalFilename>setup.exe</originalFilename>
+  </versionInfo>
+</launch4jConfig>

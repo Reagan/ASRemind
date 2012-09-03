@@ -1,0 +1,88 @@
+#########################
+# 	AS Remind	#
+#########################
+
+Introduction
+~-----------
+The AS Remind is a minimal but captivating and intutitive application that will be aimed towards reminding
+users of important schedules and tasks and optionally allowing them to track their current activities. The
+AS Remind will use Google Calendar and MS Exchange as the backends for the application and repos for the schedules
+(and tasks?).
+
+Key Functionality (vs 1)
+~------------------------
+1. Linking to unlimited number Google Calendars
+2. Cache & synchronization when internet access is avilable
+3. Startup at launch of computer
+4. Connect to Google Calendar using the Calendar API
+
+Main Modules
+~-----------
+1. Connect to Windows Registry to launch application on start up, Launch on startup for linux applications
+2. Custom UI components
+3. Local storage to Program files/Linux installation directory of the calendar entries for syncing later
+4. Encryption of the stored calendar items in installation folder & login details
+5. Reading from Properties file for the login details and 
+
+
+interesting links
+~-----------------
+=======
+
+~------------------------
+Scope of the application 
+~------------------------
+1. Display the items as added in Google calendar (support for outlook tasks to be considered for later iterations)
+2. Remind users (based on settings) when calendar items are due 
+3. Allow user to update entries (of current tasks and future tasks/appointments) into Calendar (these are added as items
+in Google Calendar rather than as tasks - unsharable...poor support:( )
+
+
+interesting links - Google Calendar
+~----------------------------------
+http://en.wikipedia.org/wiki/Comparison_of_time_tracking_software
+
+Google Search Phrase - google calendar as time sheet manager
+
+http://www.makeuseof.com/dir/gtimereport-create-timesheets/ - creates timesheet reports of the calendar items in Google calendar
+http://www.timemeter.com/ - a time tracking module for outlook...does not have the prompter
+
+http://en.wikipedia.org/wiki/5PM
+http://www.5pmweb.com/
+http://24sevenoffice.com/features/
+http://www.aceproject.com/
+http://www.bqe.com/default.asp
+http://www.chrometa.com/
+http://en.wikipedia.org/wiki/Clicktime.com
+http://en.wikipedia.org/wiki/Dotproject
+http://en.wikipedia.org/wiki/Fanurio
+http://en.wikipedia.org/wiki/Grindstone_(time_tracking_software)
+http://en.wikipedia.org/wiki/Journyx
+http://en.wikipedia.org/wiki/Tracker_(Business_Software)
+
+http://www.google.com/apps/intl/en/business/calendar.html
+http://www.google.com/googlecalendar/about.html
+http://support.google.com/calendar/bin/answer.py?hl=en&answer=98565
+
+~-----------------------------------------------------------------------------------
+Google Calendar API - http://code.google.com/apis/calendar/v3/using.html (REST API)
+~-----------------------------------------------------------------------------------
+
+Access to the Google Calendar API is via REST or java client lib (indicated below)
+
+http://code.google.com/apis/calendar/v3/getting_started.html
+Google Java API for Calendar - http://code.google.com/p/google-api-java-client/
+Support for CalDev Protocol - http://code.google.com/p/google-api-java-client/
+Javadoc for Google Calendar Java API - http://javadoc.google-api-java-client.googlecode.com/hg/apis/calendar/v3/index.html 
+
+
+Interesting links - Exchange calendar intergration
+~---------------------------------------------------
+1. JavaMail 3rd Party libraries -http://java.sun.com/products/javamail/Third_Party.html\
+
+1. JEC provides a pure Java API to access Microsoft Exchange Server. With it you can access and manipulate emails, calendar, contacts, and tasks in the Exchange server. It supports 2 types of licenses - 1) Non-Profits, Academic Institutions, and Private Individuals, and 2) commercial. For more information see: http://www.javaexchangeconnector.com/ , http://www.javaexchangeconnector.com/ 
+
+~---------------------
+Exchange Calendar API
+~---------------------
+

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?>
+<!-- 
+    Install file for IzPack for ASRemind
+-->
+<installation version="1.0">
+    <!-- 
+        app details information
+   -->
+    <info>
+        <appname>ASRemind</appname>
+        <appversion>1.0</appversion>
+        <authors>
+            <author name="Reagan Mbitiru" email="reaganmbitiru@gmail.com"/>
+        </authors>
+        <url>http://aprilsecond.kbo.co.ke</url>
+        <javaversion>1.6</javaversion>
+        <requiresjdk>no</requiresjdk>
+        <uninstaller name="uninstall.jar" path="${INSTALL_PATH}/uninstaller" write="yes"/>
+        <summarylogfilepath>$INSTALL_PATH/InstallationSummary.htm</summarylogfilepath>
+        <writeinstallationinformation>no</writeinstallationinformation>
+    </info>
+
+    <!-- 
+       The gui preferences indication.
+       Sets the installer window to 640x480. It will not be able to change the
+       frame size
+   -->
+    <guiprefs width="640" height="480" resizable="no">
+        <modifier key="layoutAnchor" value="CENTER"/>
+        <modifier key="useHeadingPanel" value="yes"/>
+        <modifier key="useHeadingForSummary" value="yes"/>
+        <modifier key="headingImageOnLeft" value="yes"/>
+        <modifier key="headingLineCount" value="2"/>
+        <modifier key="headingFontSize" value="1.5"/>
+        <modifier key="headingBackgroundColor" value="0x00ffffff"/>
+        <modifier key="headingPanelCounter" value="text"/>
+        <modifier key="headingPanelCounterPos" value="inHeading"/>
+    </guiprefs>
+    
+    <variables>
+        <variable name="DesktopShortcutCheckboxEnabled" value="true"/>
+    </variables>
+    <!-- 
+       The locale section.
+       Asks here to include the English langpacks.
+   -->
+    <locale>
+        <langpack iso3="eng"/>
+    </locale>
+
+    <!-- 
+       The resources section.
+       set to use the LicencePanel and the InfoPanel.
+   -->
+    <resources>
+        <res src="shortcutSpec.xml" id="shortcutSpec.xml"/>
+        <res id="HTMLInfoPanel.readme" src="Readme.htm"/>
+        <res id="HTMLLicencePanel.licence" src="License.txt"/>
+        <res id="Heading.image" src="images/heading-image.png"/>
+        <res id="Installer.image" src="images/side-image.png"/>
+    </resources>
+
+    <!-- 
+       The panels section. Indicates the panels we want to use and
+       the order that they should be in
+   -->
+    <panels>
+       <panel classname="HelloPanel"/>
+        <panel classname="HTMLInfoPanel" id="readme"/>
+        <panel classname="HTMLLicencePanel" id="licence"/>
+        <panel classname="TargetPanel"/>
+        <panel classname="TreePacksPanel"/>
+        <panel classname="SummaryPanel"/>
+        <panel classname="InstallPanel"/>
+        <panel classname="ShortcutPanel"/>
+        <panel classname="FinishPanel"/>
+    </panels>
+
+    <!-- 
+       The packs section. Only one pack is required for installation 
+       and thus defined
+   -->
+    <packs>
+        <pack name="Base" required="yes">
+            <description>The base files</description>
+            <file src="Readme.htm" targetdir="$INSTALL_PATH"/>
+            <file src="License.txt" targetdir="$INSTALL_PATH"/>
+            <file src="app.ico" targetdir="$INSTALL_PATH"/>
+            <file src="ASRemind.jar" targetdir="$INSTALL_PATH"/>	    
+            <fileset dir="lib" targetdir="$INSTALL_PATH/lib">
+                <include name="*.jar"/>
+            </fileset>	    
+	    <fileset dir="cache" targetdir="$INSTALL_PATH/cache" />
+	    <fileset dir="resources" targetdir="$INSTALL_PATH/resources" />
+	    <fileset dir="settings" targetdir="$INSTALL_PATH/settings" />
+        </pack>
+    </packs>
+    <native type="izpack" name="ShellLink.dll"/>
+    <native type="3rdparty" name="COIOSHelper.dll" stage="both">
+        <os family="windows"/>
+    </native>
+</installation>

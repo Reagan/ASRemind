@@ -1,0 +1,16 @@
+###############
+# AS Animator #
+###############
+
+Introduction
+~-----------
+The AS Animator is a minimal class written in Java that is able to animate the display of JFrames. Animation of JFrames with polygon and non polygn shapes is supported (However animation will be based on the four corners of a virtual enclosing rectangle). Animation features supported include :-
+
+1. Animated fade in & fade out of the JFrame
+2. Animated resizing of the JFrame window between pre-defined dimensions.
+3. Different animation modes :- linear and/or based on a function
+4. Overidable method for implementing shearing, twisting and custom animation effects
+5. Configurable datum points to allow for animation from any side of the JFrame
+(typically, animation will have its datum as the center)
+6. Chaining of multiple animations for the JFrame
+7. Support for decorated and undecorated JFrames
