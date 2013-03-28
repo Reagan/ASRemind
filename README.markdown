@@ -5,7 +5,25 @@ AS Remind is a minimal desktop application written in Java (read:widget) that li
 
 Please note that this is an alpha version of this application and that not all features may work as expected. Please send me an email on *reaganmbitiru@gmail.com* in case of this. The application has been tested on Windows7 & Xubuntu 11.10. 
 
-{{https://raw.github.com/Reagan/ASRemind/master/screenshots/Activities%20page.png | title}} - same as above: picture links to url
+Activities pane
+----------------
+![Activities pane](https://raw.github.com/Reagan/ASRemind/master/screenshots/Activities%20page.png)
+
+Schedule pane
+-------------
+![Schedule pane](https://raw.github.com/Reagan/ASRemind/master/screenshots/schedule%20page.png)
+
+Track Pane
+----------
+![Track Pane](https://raw.github.com/Reagan/ASRemind/master/screenshots/track%20pane.png)
+
+Reminder pane
+--------------
+![Reminder Pane](https://raw.github.com/Reagan/ASRemind/master/screenshots/Reminder.png)
+
+Activity Reminder pane
+-----------------------
+![Activity Pane](https://raw.github.com/Reagan/ASRemind/master/screenshots/Activity%20Item%20description.png)
 
 Installation
 -------------
