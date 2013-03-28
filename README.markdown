@@ -5,6 +5,8 @@ AS Remind is a minimal desktop application written in Java (read:widget) that li
 
 Please note that this is an alpha version of this application and that not all features may work as expected. Please send me an email on *reaganmbitiru@gmail.com* in case of this. The application has been tested on Windows7 & Xubuntu 11.10. 
 
+{{https://raw.github.com/Reagan/ASRemind/master/screenshots/Activities%20page.png | title}} - same as above: picture links to url
+
 Installation
 -------------
 To install AS Remind, select setup.exe in the installer folder and select various options in the installation process. The application installs on the Program Files folder on windows and /usr/local folder on *nix environemnts and starts up on boot up.
